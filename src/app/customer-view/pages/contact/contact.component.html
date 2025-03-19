@@ -1,0 +1,52 @@
+<mat-card>
+
+   <mat-card-content>
+
+      <div id="text">
+         <p>Yes, I do accept critics (and compliments!)</p>
+         <p>You can rather:</p>
+      </div>
+      
+      <mat-grid-list cols="2" rowHeight="100px">
+
+         <mat-grid-tile class="option"
+            (click)="sendEmail()">
+            <fa-icon [icon]="email"></fa-icon>
+            <div>Email me</div>
+         </mat-grid-tile>
+
+         <mat-grid-tile class="option"
+            (click)="showAlert('call')">
+            <fa-icon [icon]="phone"></fa-icon>
+            <div>Call me</div>
+         </mat-grid-tile>
+
+         <mat-grid-tile class="option"
+            (click)="openTab('whatsapp')">
+            <fa-icon [icon]="whatsapp"></fa-icon>
+            <div>Text me</div>
+         </mat-grid-tile>
+
+         <mat-grid-tile class="option"
+            (click)="openTab('github')">
+            <fa-icon [icon]="github"></fa-icon>
+            <div>Check my repos</div>
+         </mat-grid-tile>
+
+         <mat-grid-tile class="option"
+            (click)="openTab('linkedin')">
+            <fa-icon [icon]="linkedin"></fa-icon>
+            <div>Get professional... mostly</div>
+         </mat-grid-tile>
+
+         <mat-grid-tile class="option"
+            (click)="showAlert('pidgeon')">
+            <fa-icon [icon]="dove"></fa-icon>
+            <div>Send me a messenger pidgeon</div>
+         </mat-grid-tile>
+
+      </mat-grid-list>
+
+   </mat-card-content>
+
+</mat-card>

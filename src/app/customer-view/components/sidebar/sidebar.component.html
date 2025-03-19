@@ -1,0 +1,29 @@
+<mat-nav-list>
+
+   <mat-list-item 
+      routerLink="profile" 
+      [routerLinkActive]="['is-active']">
+         <div class="tag">
+            <mat-icon>person</mat-icon>
+            <span>ABOUT ME</span>
+         </div>
+   </mat-list-item>
+
+   <mat-list-item 
+      routerLink="projects" 
+      [routerLinkActive]="['is-active']">
+         <div class="tag">
+            <mat-icon>folder</mat-icon>
+            <span>PROJECTS</span>
+         </div>
+   </mat-list-item>
+
+   <mat-list-item 
+      routerLink="contact" 
+      [routerLinkActive]="['is-active']">
+         <div class="tag">
+            <mat-icon>mail</mat-icon>
+            <span>CONTACT ME</span>
+         </div>
+   </mat-list-item>
+</mat-nav-list>

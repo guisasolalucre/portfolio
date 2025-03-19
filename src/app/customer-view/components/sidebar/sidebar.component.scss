@@ -1,0 +1,18 @@
+mat-nav-list{
+   padding-top: 1.5em;
+}
+
+mat-list-item{
+   padding: 2em;
+}
+
+.is-active .tag {
+   font-weight: 600;    
+}
+
+.tag {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   gap: 1em;
+}

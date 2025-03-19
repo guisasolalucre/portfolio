@@ -1,0 +1,29 @@
+mat-card {
+   max-width: 900px;
+   margin: auto;
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+
+#text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: large;
+   font-weight: 600;
+   padding-top: 1%;
+}
+
+.option div {
+   margin-left: 1.5em;
+}
+
+fa-icon {
+   font-size: 2em !important;
+}
+
+mat-grid-tile:hover {
+   background-color: rgb(217, 217, 217);
+   font-size: 1.2em;
+   transition: font-size 0.3s;
+}

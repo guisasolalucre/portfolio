@@ -1,0 +1,13 @@
+<mat-grid-list cols="3" rowHeight="3:2">
+
+   <mat-grid-tile 
+      *ngFor="let project of projects"
+      class="grid-tile" 
+      (click)="goToDetail(project.id)">
+         <div 
+            class="tile-content" 
+            [style.background-image]="'url(' + project.coverImageUrl + ')'">
+         </div>
+   </mat-grid-tile>
+
+</mat-grid-list>

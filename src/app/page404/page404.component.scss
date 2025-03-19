@@ -1,0 +1,34 @@
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 90vh;
+   padding: 2em;
+   text-align: left;
+}
+
+.image {
+   max-width: 40%;
+   height: auto;
+   border-radius: 10%;
+}
+
+.text {
+   margin-left: 5em;
+}
+
+button {
+   background-color: #000;
+   color: #fff;
+   border: none;
+   padding: 0.8em 1.2em;
+   cursor: pointer;
+   font-size: 1rem;
+   transition: 0.3s;
+   border-radius: 20px;
+   margin-top: 2%;
+}
+
+button:hover {
+   background-color: #444;
+}

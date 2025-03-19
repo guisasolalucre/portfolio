@@ -1,0 +1,17 @@
+<div class="carousel-container" [style]="numberOfImagesStyle">
+
+   <div class="img-container" [style.transform]="transformStyle">
+      <section class="slider" *ngFor="let img of images">
+         <img [src]=img>
+      </section>
+   </div>
+
+   <button mat-icon-button (click)="prevImage()" class="carousel-button carousel-button-prev">
+      <mat-icon>chevron_left</mat-icon>
+   </button>
+
+   <button mat-icon-button (click)="nextImage()" class="carousel-button carousel-button-next">
+      <mat-icon>chevron_right</mat-icon>
+   </button>
+
+</div>

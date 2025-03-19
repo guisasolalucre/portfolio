@@ -1,0 +1,19 @@
+<app-toolbar (openDrawer)="this.toggle = !this.toggle"></app-toolbar>
+
+<mat-divider></mat-divider>
+
+<mat-drawer-container class="container" #drawer>
+
+   <mat-drawer disableClose mode="over" backdrop="true" [opened]="toggle">
+      <app-sidebar></app-sidebar>
+   </mat-drawer>
+
+   <div class="content">
+      <router-outlet></router-outlet>
+   </div>
+
+</mat-drawer-container>
+
+<mat-divider></mat-divider>
+
+<app-footer></app-footer>

@@ -1,0 +1,36 @@
+.container{
+   display: flex;
+   flex-direction: column;
+   text-align: justify;
+}
+
+mat-card {
+   display: flex;
+   flex-direction: row;
+   max-width: 70vw;
+   margin: 3% auto;
+   padding: 2em 3em;
+}
+
+.img-container {
+   max-width: 15vw;
+   min-width: 15vw;
+   height: 10rem;
+   margin-right: 2em;
+   margin-top: 1%;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 2%;
+}
+
+.img-container img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+#extra{
+   margin-top: 2%;
+}

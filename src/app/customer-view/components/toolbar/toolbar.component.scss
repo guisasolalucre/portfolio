@@ -1,0 +1,21 @@
+mat-toolbar {
+   display: flex;
+   justify-content: space-between;
+   height: 10%;
+   background-color: white;
+   padding: 0 2%;
+}
+
+.mat-toolbar-content {
+   display: flex;
+   align-items: center;
+}
+
+#name{
+   font-weight: 600;
+   font-size: 0.75em;
+   letter-spacing: 0.5em;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
