@@ -1,17 +1,19 @@
-<app-toolbar (openDrawer)="this.toggle = !this.toggle"></app-toolbar>
+<app-toolbar [toggle]="toggle" (openDrawer)="toggleDrawer()"></app-toolbar>
 
 <mat-divider></mat-divider>
 
-<mat-drawer-container class="container" #drawer>
-
-   <mat-drawer disableClose mode="over" backdrop="true" [opened]="toggle">
+<mat-drawer-container class="container">
+   <mat-drawer 
+      #drawer 
+      mode="over"
+      [opened]="toggle"
+      (closedStart)="toggle = false">
       <app-sidebar></app-sidebar>
    </mat-drawer>
 
    <div class="content">
       <router-outlet></router-outlet>
    </div>
-
 </mat-drawer-container>
 
 <mat-divider></mat-divider>

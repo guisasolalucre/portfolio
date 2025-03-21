@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -6,16 +6,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent {
+  @Input() toggle = false;
+  @Output() openDrawer = new EventEmitter<void>();
 
-  toggle = false
+  constructor() {}
 
-  @Output()
-  openDrawer: EventEmitter<boolean> = new EventEmitter();
-
-  constructor(){}
-
-  onToggle(){
-    this.toggle = !this.toggle;
+  onToggle() {
     this.openDrawer.emit();
   }
 }

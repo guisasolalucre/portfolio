@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./customer-view.component.scss']
 })
 export class CustomerViewComponent {
+  toggle = false;
 
-  toggle = false
-
+  toggleDrawer() {
+    this.toggle = !this.toggle;
+  }
 }
